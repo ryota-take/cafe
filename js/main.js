@@ -66,7 +66,6 @@ const pageTop =document.getElementById('page_top');
 btn.addEventListener('click', () => {
   menuWindow.classList.toggle('window-show');
   body.classList.toggle('modal-open');
-  pageTop.classList.toggle();
 });
 
 
