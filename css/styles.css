@@ -137,13 +137,15 @@ header {
   pointer-events: auto;
 }
 
-.menu-window > ul a {
+.menu-window ul >a {
   display: block;
-  width: 50px;
+  margin-left: 60px;
+  width: 70px;
   user-select: none;
+  transition: opacity .3s;
 }
 
-.menu-window > ul a:hover{
+.menu-window ul >a:hover{
   opacity: .6;
 }
 
@@ -153,11 +155,6 @@ header {
   color: rgb(82, 79, 79);
 }
 
-/* .menu-window ul > a {
-  display: block;
-  width: 60px;
-} */
-
 .menu-window ul {
   font-size: 14px;
   list-style: none;
@@ -166,9 +163,9 @@ header {
 .menu-window li {
   display: block;
   width: 80px;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* padding-left: 60px; */
-  margin: 40px 40px 40px 50px;
+  margin: 40px 40px 40px 0;
 }
 
 .reserve-btn {
