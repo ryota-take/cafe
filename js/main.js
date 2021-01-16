@@ -61,11 +61,13 @@
 const btn = document.getElementById('btn01');
 const menuWindow = document.querySelector('.menu-window');
 const body = document.querySelector('body');
+const pageTop =document.getElementById('page_top');
 
 btn.addEventListener('click', () => {
   menuWindow.classList.toggle('window-show');
   body.classList.toggle('modal-open');
-})
+  pageTop.classList.toggle('hidden');
+});
 
 
 

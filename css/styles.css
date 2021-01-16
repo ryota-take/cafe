@@ -148,19 +148,27 @@ header {
 }
 
 .menu-window a {
+  
   text-decoration: none;
   color: rgb(82, 79, 79);
 }
 
+/* .menu-window ul > a {
+  display: block;
+  width: 60px;
+} */
+
 .menu-window ul {
   font-size: 14px;
   list-style: none;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .menu-window li {
+  display: block;
+  width: 80px;
   cursor: pointer;
   /* padding-left: 60px; */
-  margin: 50px 50px 50px 60px;
+  margin: 40px 40px 40px 50px;
 }
 
 .reserve-btn {
@@ -197,6 +205,10 @@ header {
   margin-top: 60px ;
   display: flex;
   justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
 
 
@@ -443,6 +455,10 @@ header {
 
 .reserve > img {
   margin: 0 5px;
+}
+
+.reserve > h1 {
+  font-size: 24px;
 }
 
 .reservation {
