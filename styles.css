@@ -7,10 +7,12 @@ body {
 }
 
 
+
 /* --- モーダルウィンドウ開いている時 背景スクロールしない --- */
 .modal-open {
   height: 100vh;
   overflow-y: hidden;
+  display: inline;
 }
 
         .modal-open {   /*-- iOSには position: fixed; が必要 --*/
@@ -57,7 +59,8 @@ header {
   padding-top: 15px;
   background: #fff;
   width: 100%;
-  height: 60px;
+  /* height: 60px; */
+  /* height: -webkit-fill-available; */
   display: flex;
   position: fixed;
   z-index: 4;
@@ -137,13 +140,15 @@ header {
   pointer-events: auto;
 }
 
-.menu-window > ul a {
+.menu-window ul >a {
   display: block;
-  width: 50px;
+  margin-left: 60px;
+  width: 70px;
   user-select: none;
+  transition: opacity .3s;
 }
 
-.menu-window > ul a:hover{
+.menu-window ul >a:hover{
   opacity: .6;
 }
 
@@ -153,11 +158,6 @@ header {
   color: rgb(82, 79, 79);
 }
 
-/* .menu-window ul > a {
-  display: block;
-  width: 60px;
-} */
-
 .menu-window ul {
   font-size: 14px;
   list-style: none;
@@ -166,9 +166,9 @@ header {
 .menu-window li {
   display: block;
   width: 80px;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* padding-left: 60px; */
-  margin: 40px 40px 40px 50px;
+  margin: 40px 40px 40px 0;
 }
 
 .reserve-btn {
@@ -621,7 +621,7 @@ header {
 
 
 
-/* large screen  PC */  
+/* large screen  PC */
 @media (min-width: 769px) {
 
 
